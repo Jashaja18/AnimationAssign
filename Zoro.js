@@ -1,7 +1,7 @@
 class Zoro {
   constructor(game) {
     this.game = game;
-    this.animation = new Animator(ASSET_MANAGER.getAsset("./img/Walk.png"), -1, 2, 48, 148, 8, .06);
+    this.animator = new Animator(ASSET_MANAGER.getAsset("./img/walk.png"), 5, 0, 55, 108, 8, .05);
     this.x = 0;
     this.y = 483;
     this.speed = 200;
@@ -13,6 +13,6 @@ class Zoro {
   };
 
   draw(ctx) {
-    this.animation.drawFrame(this.game.clockTick, ctx, this.x, this.y);
+    this.animator.drawFrame(this.game.clockTick, ctx, 25, 25);
   };
 }
