@@ -1,10 +1,10 @@
 class Zoro {
   constructor(game) {
     this.game = game;
-    this.animator = new Animator(ASSET_MANAGER.getAsset("./img/walk.png"), 5, 0, 55, 108, 8, .05);
+    this.animator = new Animator(ASSET_MANAGER.getAsset("./img/walk.png"), -1, 0, 55, 110, 8, .05);
     this.x = 0;
-    this.y = 483;
-    this.speed = 200;
+    this.y = 500;
+    this.speed = 100;
   };
 
   update() {
