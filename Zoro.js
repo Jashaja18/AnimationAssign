@@ -1,7 +1,7 @@
 class Zoro {
   constructor(game) {
     this.game = game;
-    this.animator = new Animator(ASSET_MANAGER.getAsset("./img/walk.png"), -1, 0, 55, 110, 8, .05);
+    this.animator = new Animator(ASSET_MANAGER.getAsset("./img/walk.png"), -1, 0, 60, 100, 8, .05);
     this.x = 0;
     this.y = 500;
     this.speed = 100;
