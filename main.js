@@ -2,8 +2,8 @@ const gameEngine = new GameEngine();
 
 const ASSET_MANAGER = new AssetManager();
 
-ASSET_MANAGER.queueDownload("./img/background.png");
-ASSET_MANAGER.queueDownload("./img/run.png");
+ASSET_MANAGER.queueDownload("./img/Background.png");
+ASSET_MANAGER.queueDownload("./img/Walk.png");
 
 
 ASSET_MANAGER.downloadAll(() => {
